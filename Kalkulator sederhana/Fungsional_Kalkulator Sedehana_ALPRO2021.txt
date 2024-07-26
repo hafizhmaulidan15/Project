@@ -1,0 +1,22 @@
+Aplikasi Kalkulator sederhana
+
+Tim pembuat: Python Vector
+NIM Nama Anggota Tim:
+1. J0304211157 Muhammad Hafizh Maulidan
+2. J0304211163 Zaki Rafi Athallah
+3. J0304211164 Dhia Suhaila
+
+Deskripsi Singkat Aplikasi:
+>> Aplikasi dapat menghitung angka (menambah, mengurang, membagi, mengalikan, dan lain-lain)
+>> Menggunakan Fungsi def untuk memanggil fungsi tersebut jika di mintai input pilihan yang akan di pilih
+
+>> Kemudian aplikasi dilengkapi fungsi untuk menghitung angka-angka yan di inputkan
+a. menampilkan pilihan operasi perhitungan
+	1. Pertambahan (+)
+	2. Pengurangan (-)
+	3. Perkalian (*)
+	4. Pembagian (/)
+	5. Perpangkatan (**)
+	6. Pebulatan pembagian (//) 
+	7. Sisa dari pembagian (%)
+b. dapat menampilkan hasil dari yanng telah dihitung
