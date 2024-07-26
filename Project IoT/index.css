@@ -1,0 +1,139 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('grow-n-serve-microgreen-kits-35604_amazon_44_20191024141225u2zygs.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  background-color: #006b00;
+  color: white;
+  padding: 15px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 1.2em;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  color: #ffffff;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+header h1 {
+  margin-left: 20px;
+  font-size: 25px;
+}
+
+main {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.pairing-form {
+  max-width: 450px;
+  display: block;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 35px;
+  border-radius: 35px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 1.1em;
+  text-align: center;
+}
+
+.pairing-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.pairing-form input[type="text"] {
+  width: 100%;
+  padding: 11px;
+  margin-bottom: 22px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.pairing-form button:hover {
+  background-color: #90ecd2;
+  transform: scale(1.05);
+}
+
+.pairing-form button {
+  background-color: #4bd2ac;
+  color: white;
+  padding: 12px 50px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 18px;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.pairing-form button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+footer {
+  text-align: center;
+  padding: 15px 0;
+  background-color:#006b00;
+  color: white;
+  font-size: 1.2em;
+}
+
+footer p {
+  color: #ffffff;
+}
+
+/* Tambahan CSS untuk teks "Hubungkan Perangkat" */
+.pairing-form a {
+  color: white;
+  text-decoration: none;
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Tambahkan setelah style pairing-form */
+.back-button {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #4bd2ac;
+  color: white;
+  padding: 12px 50px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.back-button:hover {
+  background-color: #90ecd2;
+  transform: scale(1.05);
+}

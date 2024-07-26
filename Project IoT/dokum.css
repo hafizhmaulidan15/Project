@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    text-align: center;
+    background: #77b0aa;
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1.2em;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #135D66;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;}
+
+.logo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.back-button {
+    position: fixed;
+    top: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    z-index: 1000; /* Ensure it stays on top */
+}
+
+.back-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #004b00;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.back-button a:hover {
+    background-color: #002f00;
+}
+
+.documentation {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.section-title {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.section-title h1 {
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #eb6234;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.image-gallery img {
+    width: calc(33.333% - 20px); /* Subtract the gap to fit perfectly */
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.image-gallery.flowcharts img {
+    width: calc(50% - 20px); /* Two columns */
+}
+
+/* Khusus untuk card matra */
+.card.matra img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 9/16; /* Menjadikan persegi panjang */
+}
+
+/* Gaya tambahan untuk menjaga layout kotak lainnya */
+.team-section .container .team-card .card img,
+.additional-section .container .team-card .card img {
+    border: 5px solid #000000;
+    border-radius: 8px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Tambahkan gaya khusus untuk matra card */
+.card.matra .image-section img {
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 16/9; /* Menjadikan persegi panjang */
+}
+
+footer {
+    text-align: center;
+    padding: 25px 0;
+    background: #77B0AA;
+    color: white;
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 900px) {
+    .image-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .image-gallery {
+        grid-template-columns: 1fr;
+    }
+}
